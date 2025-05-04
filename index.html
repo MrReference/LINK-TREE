@@ -2,27 +2,34 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReferenceArts - Enlaces</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #1e1e1e;
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 35%;
+      max-width: 150px;
+      height: auto;
       border-radius: 50%;
       margin: 1rem auto;
+      display: block;
     }
 
     h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
 
     .link {
@@ -31,42 +38,54 @@
       justify-content: center;
       margin: 1rem auto;
       padding: 1rem;
-      width: 80%;
+      width: 100%;
       max-width: 400px;
       border-radius: 50px;
       background: #7d5222;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.2s;
+      font-size: 1.1rem;
+      transition: background 0.2s, transform 0.2s;
     }
 
     .link:hover {
       background: #e8955d;
+      transform: scale(1.02);
     }
 
     .link img {
       width: 24px;
       margin-right: 10px;
     }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .link {
+        font-size: 1rem;
+        padding: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Cambia esta URL al subir tu imagen -->
   <img src="logo.png" alt="ReferenceArts Logo" class="avatar">
   <h1>@ReferenceArts</h1>
 
   <a class="link" href="https://www.deviantart.com/referencearts" target="_blank">
-     DEVIANTART
+    DEVIANTART
   </a>
 
   <a class="link" href="https://x.com/MrReferenceArt" target="_blank">
-     X (Twitter)
+    X (Twitter)
   </a>
 
   <a class="link" href="https://www.patreon.com/c/ReferenceArts" target="_blank">
-     PATREON
+    PATREON
   </a>
 
 </body>
